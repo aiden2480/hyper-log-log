@@ -11,3 +11,7 @@ string to_binary(string input) {
 
   return output;
 }
+
+string to_binary(unsigned long input) {
+    return to_binary(std::to_string(input));
+}
